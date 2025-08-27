@@ -22,11 +22,11 @@
     <title>Emergency Service</title>
   </head>
   <body>
-    <header class="md:px-16">
+    <header class="max-w-[1600px] mx-auto">
       <!-- note: Nav sec -->
       <section class="nav-section">
-        <div class="nav-con flex justify-between items-center py-4">
-          <div class="flex gap-5">
+        <div class="nav-con md:flex md:justify-between items-center py-4">
+          <div class="flex gap-5 justify-center mb-3">
             <figure>
               <img class="w-12" src="./assets/logo.png" alt="" />
             </figure>
@@ -35,7 +35,7 @@
               Service
             </h1>
           </div>
-          <div class="flex gap-3">
+          <div class="flex gap-3 justify-center">
             <!-- *❤️ heart nav -->
             <h2
               class="w-[125px] h-[52px] bg-[#EBFDEF] text-center p-3 rounded-full"
@@ -50,7 +50,7 @@
             </h2>
             <!-- *copy nav -->
             <h2
-              class="w-[125px] h-[52px] bg-[#00A63E] text-center text-white font-semibold p-3 rounded-full"
+              class="w-[125px] h-[52px] bg-[#00A63E] text-center text-white font-semibold p-3 rounded-full  "
             >
               <span>0</span> copy
             </h2>
@@ -58,7 +58,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main class="mb-6">
       <!--*note: banner part -->
       <section class="banner-sec">
         <div
@@ -195,7 +195,41 @@
                 </div>
               </div>
             </div>
-            <!--! Service Card1 -->
+            <!--Note: 1st line -->
+            <!--! Service Card4 -->
+            <div class="card bg-white shadow-md">
+              <div class="card-body">
+                <div class="flex justify-between items-center mb-2">
+                  <h2 class="text-3xl">🚑</h2>
+                  <i class="fa-solid fa-heart text-red-500"></i>
+                </div>
+                <h2 class="card-title text-black text-lg font-bold">
+                  Ambulance Service
+                </h2>
+                <p class="text-black text-sm">Ambulance</p>
+                <h1 class="text-3xl font-bold text-black my-4">1994-999999</h1>
+                <p
+                  class="text-black bg-[#F2F2F2] w-15 text-center p-1 rounded-full"
+                >
+                  Health
+                </p>
+                <div class="card-actions justify-center mt-4">
+                  <div class="flex gap-2">
+                    <button
+                      class="btn bg-white border border-gray-400 text-black hover:bg-gray-100 min-w-[130px]"
+                    >
+                      <i class="fa-solid fa-copy"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn bg-green-500 text-white hover:bg-green-600 min-w-[130px]"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--! Service Card5 -->
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
@@ -203,14 +237,14 @@
                   <i class="fa-solid fa-heart text-red-500"></i>
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
-                  National Emergency Number
+                  Women & Child Helpline
                 </h2>
-                <p class="text-black text-sm">Emergency</p>
-                <h1 class="text-3xl font-bold text-black my-4">999</h1>
+                <p class="text-black text-sm">Women & Child Helpline</p>
+                <h1 class="text-3xl font-bold text-black my-4">109</h1>
                 <p
                   class="text-black bg-[#F2F2F2] w-12 text-center p-1 rounded-full"
                 >
-                  All
+                  Help
                 </p>
                 <div class="card-actions justify-center mt-4">
                   <div class="flex gap-2">
@@ -228,73 +262,7 @@
                 </div>
               </div>
             </div>
-            <!--! Service Card2 -->
-            <div class="card bg-white shadow-md">
-              <div class="card-body">
-                <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">👮🏻</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
-                </div>
-                <h2 class="card-title text-black text-lg font-bold">
-                  Police Helpline Number
-                </h2>
-                <p class="text-black text-sm">Police</p>
-                <h1 class="text-3xl font-bold text-black my-4">999</h1>
-                <p
-                  class="text-black bg-[#F2F2F2] w-12 text-center p-1 rounded-full"
-                >
-                  All
-                </p>
-                <div class="card-actions justify-center mt-4">
-                  <div class="flex gap-2">
-                    <button
-                      class="btn bg-white border border-gray-400 text-black hover:bg-gray-100 min-w-[130px]"
-                    >
-                      <i class="fa-solid fa-copy"></i> Copy
-                    </button>
-                    <button
-                      class="call-btn btn bg-green-500 text-white hover:bg-green-600 min-w-[130px]"
-                    >
-                      <i class="fa-solid fa-phone"></i> Call
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--! Service Card3 -->
-            <div class="card bg-white shadow-md">
-              <div class="card-body">
-                <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">🚒</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
-                </div>
-                <h2 class="card-title text-black text-lg font-bold">
-                  Fire Service Number
-                </h2>
-                <p class="text-black text-sm">Fire Service</p>
-                <h1 class="text-3xl font-bold text-black my-4">999</h1>
-                <p
-                  class="text-black bg-[#F2F2F2] w-12 text-center p-1 rounded-full"
-                >
-                  All
-                </p>
-                <div class="card-actions justify-center mt-4">
-                  <div class="flex gap-2">
-                    <button
-                      class="btn bg-white border border-gray-400 text-black hover:bg-gray-100 min-w-[130px]"
-                    >
-                      <i class="fa-solid fa-copy"></i> Copy
-                    </button>
-                    <button
-                      class="call-btn btn bg-green-500 text-white hover:bg-green-600 min-w-[130px]"
-                    >
-                      <i class="fa-solid fa-phone"></i> Call
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--! Service Card1 -->
+            <!--! Service Card6 -->
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
@@ -302,14 +270,14 @@
                   <i class="fa-solid fa-heart text-red-500"></i>
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
-                  National Emergency Number
+                  Anti-Corruption Helpline
                 </h2>
-                <p class="text-black text-sm">Emergency</p>
-                <h1 class="text-3xl font-bold text-black my-4">999</h1>
+                <p class="text-black text-sm">Anti-Corruption</p>
+                <h1 class="text-3xl font-bold text-black my-4">106</h1>
                 <p
                   class="text-black bg-[#F2F2F2] w-12 text-center p-1 rounded-full"
                 >
-                  All
+                  Govt
                 </p>
                 <div class="card-actions justify-center mt-4">
                   <div class="flex gap-2">
@@ -327,22 +295,22 @@
                 </div>
               </div>
             </div>
-            <!--! Service Card2 -->
+            <!--! Service Card7 -->
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">👮🏻</h2>
+                  <h2 class="text-3xl">🚨</h2>
                   <i class="fa-solid fa-heart text-red-500"></i>
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
-                  Police Helpline Number
+                  Electricity Helpline
                 </h2>
-                <p class="text-black text-sm">Police</p>
-                <h1 class="text-3xl font-bold text-black my-4">999</h1>
+                <p class="text-black text-sm">Electricity Outage</p>
+                <h1 class="text-3xl font-bold text-black my-4">16216</h1>
                 <p
-                  class="text-black bg-[#F2F2F2] w-12 text-center p-1 rounded-full"
+                  class="text-black bg-[#F2F2F2] max-w-[75px] text-center p-1 rounded-full"
                 >
-                  All
+                  Electricity
                 </p>
                 <div class="card-actions justify-center mt-4">
                   <div class="flex gap-2">
@@ -360,22 +328,55 @@
                 </div>
               </div>
             </div>
-            <!--! Service Card3 -->
+            <!--! Service Card8 -->
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">🚒</h2>
+                  <h2 class="text-3xl">🚨</h2>
                   <i class="fa-solid fa-heart text-red-500"></i>
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
-                  Fire Service Number
+                  Brac Helpline
                 </h2>
-                <p class="text-black text-sm">Fire Service</p>
-                <h1 class="text-3xl font-bold text-black my-4">999</h1>
+                <p class="text-black text-sm">Brac</p>
+                <h1 class="text-3xl font-bold text-black my-4">16445</h1>
                 <p
                   class="text-black bg-[#F2F2F2] w-12 text-center p-1 rounded-full"
                 >
-                  All
+                  NGO
+                </p>
+                <div class="card-actions justify-center mt-4">
+                  <div class="flex gap-2">
+                    <button
+                      class="btn bg-white border border-gray-400 text-black hover:bg-gray-100 min-w-[130px]"
+                    >
+                      <i class="fa-solid fa-copy"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn bg-green-500 text-white hover:bg-green-600 min-w-[130px]"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--! Service Card9 -->
+            <div class="card bg-white shadow-md">
+              <div class="card-body">
+                <div class="flex justify-between items-center mb-2">
+                  <h2 class="text-3xl">🚨</h2>
+                  <i class="fa-solid fa-heart text-red-500"></i>
+                </div>
+                <h2 class="card-title text-black text-lg font-bold">
+                  Bangladesh Railway Helpline
+                </h2>
+                <p class="text-black text-sm">Bangladesh Railway</p>
+                <h1 class="text-3xl font-bold text-black my-4">163</h1>
+                <p
+                  class="text-black bg-[#F2F2F2] w-12 text-center p-1 rounded-full"
+                >
+                  Travel
                 </p>
                 <div class="card-actions justify-center mt-4">
                   <div class="flex gap-2">
@@ -412,9 +413,7 @@
                 Clear
               </button>
             </div>
-            <div id="history-parent">
-              
-            </div>
+            <div id="history-parent"></div>
           </div>
         </div>
       </section>
