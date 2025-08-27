@@ -20,6 +20,7 @@ for (let callBtn of callBtns) {
       const updatedCoins = navCoins - 20;
       getElement("nav-coins").innerText = updatedCoins;
       alert("Calling..." + serviceName + " " + serviceNum);
+      const timeNow = new Date().toLocaleTimeString("en-BD");
 
       const historyParent = getElement("history-parent");
       console.log(historyParent);
@@ -31,7 +32,7 @@ for (let callBtn of callBtns) {
                   <p>${serviceNum} </p>
                   
                   </div>
-                  <p>timeNow</p>
+                  <p>${timeNow}</p>
                 
 
               </div>
