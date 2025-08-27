@@ -38,10 +38,19 @@ for (let callBtn of callBtns) {
     `;
       historyParent.append(newHis);
     }
-// !---------------Clear but
+    // !---------------Clear but
     const hisClearBut = getElement("his-clr-btn");
     hisClearBut.addEventListener("click", function () {
       getElement("history-parent").innerHTML = "";
     });
+  });
+}
+// heart icon
+const heartIcon = document.getElementsByClassName("heart-icon");
+for (let heatBtn of heartIcon) {
+  heatBtn.addEventListener("click", function () {
+    let loveUpdate = getElement("nav-heart").innerText;
+    const newLove = Number(loveUpdate) + 1;
+    getElement("nav-heart").innerText = newLove;
   });
 }

@@ -22,35 +22,37 @@
     <title>Emergency Service</title>
   </head>
   <body>
-    <header class="max-w-[1600px] mx-auto">
+    <header class="max-w-[1920px] mx-auto">
       <!-- note: Nav sec -->
-      <section class="nav-section">
-        <div class="nav-con md:flex md:justify-between items-center py-4">
-          <div class="flex gap-5 justify-center mb-3">
+      <section class="nav-section px-16">
+        <div class="nav-con md:flex md:justify-between items-center pt-4 pb-2">
+          <div class="flex gap-3 justify-center mb-3">
             <figure>
               <img class="w-12" src="./assets/logo.png" alt="" />
             </figure>
-            <h1 class="font-bold text-[#006747]">
+            <h1 class="font-bold text-xl text-[#006747]">
               Emergency <br />
               Service
             </h1>
           </div>
           <div class="flex gap-3 justify-center">
             <!-- *❤️ heart nav -->
-            <h2
-              class="w-[125px] h-[52px] bg-[#EBFDEF] text-center p-3 rounded-full"
+            <div
+              class="flex gap-2 justify-center w-[125px] h-[52px] bg-[#EBFDEF] text-center p-3 rounded-full"
             >
-              <span class="font-bold">0</span> ❤️
-            </h2>
+              <h2><span id="nav-heart" class="font-bold">0</span></h2>
+              <img src="./assets/heart.png" alt="" />
+            </div>
             <!-- *🪙coin nav -->
-            <h2
-              class="w-[125px] h-[52px] bg-[#EBFDEF] text-center p-3 rounded-full"
+            <div
+              class="flex gap-2 justify-center w-[125px] h-[52px] bg-[#EBFDEF] text-center p-3 rounded-full"
             >
-              <span id="nav-coins" class="font-bold">100</span> 🪙
-            </h2>
+              <h2><span id="nav-coins" class="font-bold">100</span></h2>
+              <img src="./assets/coin.png" alt="" />
+            </div>
             <!-- *copy nav -->
             <h2
-              class="w-[125px] h-[52px] bg-[#00A63E] text-center text-white font-semibold p-3 rounded-full  "
+              class="w-[125px] h-[52px] bg-[#00A63E] text-center text-white font-semibold p-3 rounded-full"
             >
               <span>0</span> copy
             </h2>
@@ -65,9 +67,10 @@
           class="w-full"
           style="
             background: linear-gradient(
-              180deg,
+              90deg,
               #013223 0%,
-              #006747 50%,
+              #006747 40%,
+              #006747 60%,
               #013223 100%
             );
           "
@@ -91,17 +94,23 @@
       <!-- *----------------------Service Start-------------------------------------  -->
       <!-- *note: service part -->
       <section class="service-sec min-h-screen pt-5 bg-[#F5FFF6]">
-        <div class="md:px-16 grid grid-cols-12 gap-5 w-11/12 mx-auto">
+        <div class="md:px-16 grid grid-cols-12 gap-5 mx-auto">
           <!-- 🔴 Emergency Cards Section -->
           <div
-            class="service-con col-span-12 lg:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+            class="service-con col-span-12 lg:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"
           >
             <!--! Service Card1 -->
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">🚨</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
+                  <figure class="bg-[#FFE3E2] p-3 rounded-lg">
+                    <img class="w-8" src="./assets/emergency.png" alt="" />
+                  </figure>
+                  <img
+                    class="heart-icon w-5"
+                    src="./assets/loveIcon.png"
+                    alt=""
+                  />
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
                   National Emergency Number
@@ -133,8 +142,14 @@
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">👮🏻</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
+                  <figure class="bg-[#DFEFFF] p-3 rounded-lg">
+                    <img class="w-8" src="./assets/police.png" alt="" />
+                  </figure>
+                  <img
+                    class="heart-icon w-5"
+                    src="./assets/loveIcon.png"
+                    alt=""
+                  />
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
                   Police Helpline Number
@@ -166,8 +181,14 @@
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">🚒</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
+                  <figure class="bg-[#FFE3E2] p-3 rounded-lg">
+                    <img class="w-8" src="./assets/fire-service.png" alt="" />
+                  </figure>
+                  <img
+                    class="heart-icon w-5"
+                    src="./assets/loveIcon.png"
+                    alt=""
+                  />
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
                   Fire Service Number
@@ -200,8 +221,14 @@
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">🚑</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
+                  <figure class="bg-[#FFE3E2] p-3 rounded-lg">
+                    <img class="w-8" src="./assets/ambulance.png" alt="" />
+                  </figure>
+                  <img
+                    class="heart-icon w-5"
+                    src="./assets/loveIcon.png"
+                    alt=""
+                  />
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
                   Ambulance Service
@@ -233,8 +260,14 @@
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">🚨</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
+                  <figure class="bg-[#FFE3E2] p-3 rounded-lg">
+                    <img class="w-8" src="./assets/emergency.png" alt="" />
+                  </figure>
+                  <img
+                    class="heart-icon w-5"
+                    src="./assets/loveIcon.png"
+                    alt=""
+                  />
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
                   Women & Child Helpline
@@ -266,8 +299,14 @@
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">🚨</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
+                  <figure class="bg-[#FFE3E2] p-3 rounded-lg">
+                    <img class="w-8" src="./assets/emergency.png" alt="" />
+                  </figure>
+                  <img
+                    class="heart-icon w-5"
+                    src="./assets/loveIcon.png"
+                    alt=""
+                  />
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
                   Anti-Corruption Helpline
@@ -299,8 +338,14 @@
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">🚨</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
+                  <figure class="bg-[#FFE3E2] p-3 rounded-lg">
+                    <img class="w-8" src="./assets/emergency.png" alt="" />
+                  </figure>
+                  <img
+                    class="heart-icon w-5"
+                    src="./assets/loveIcon.png"
+                    alt=""
+                  />
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
                   Electricity Helpline
@@ -332,8 +377,14 @@
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">🚨</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
+                  <figure class="bg-[#FFE3E2] p-3 rounded-lg">
+                    <img class="w-8" src="./assets/brac.png" alt="" />
+                  </figure>
+                  <img
+                    class="heart-icon w-5"
+                    src="./assets/loveIcon.png"
+                    alt=""
+                  />
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
                   Brac Helpline
@@ -365,8 +416,18 @@
             <div class="card bg-white shadow-md">
               <div class="card-body">
                 <div class="flex justify-between items-center mb-2">
-                  <h2 class="text-3xl">🚨</h2>
-                  <i class="fa-solid fa-heart text-red-500"></i>
+                  <figure class="bg-[#FFE3E2] p-3 rounded-lg">
+                    <img
+                      class="w-8"
+                      src="./assets/Bangladesh-Railway.png"
+                      alt=""
+                    />
+                  </figure>
+                  <img
+                    class="heart-icon w-5"
+                    src="./assets/loveIcon.png"
+                    alt=""
+                  />
                 </div>
                 <h2 class="card-title text-black text-lg font-bold">
                   Bangladesh Railway Helpline
