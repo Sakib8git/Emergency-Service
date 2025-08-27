@@ -54,3 +54,23 @@ for (let heatBtn of heartIcon) {
     getElement("nav-heart").innerText = newLove;
   });
 }
+// copy--------
+const copyBtns = document.getElementsByClassName("copy-btn");
+for (let copyBtn of copyBtns) {
+  copyBtn.addEventListener("click", function () {
+    // console.log("object");
+    // const copyCount = getElement("copy-count").innerText;
+    const hotlineNumber =
+      copyBtn.parentNode.parentNode.parentNode.children[3].innerText;
+
+    navigator.clipboard.writeText(hotlineNumber).then(() => {
+      // ✅ Show alert
+      alert(`Copied: ${hotlineNumber}`);
+
+      // ✅ Update copy count
+      const copyCountEl = getElement("copy-count");
+      let currentCount = parseInt(copyCountEl.innerText);
+      copyCountEl.innerText = currentCount + 1;
+    });
+  });
+}
