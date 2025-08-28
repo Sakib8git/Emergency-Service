@@ -14,12 +14,12 @@ for (let callBtn of callBtns) {
     console.log(serviceNum);
 
     if (navCoins < 20) {
-      alert("You have not enough coin");
+      alert("❌ You don't have enough coins! You need at least 20 coins to make a call.");
       return;
     } else {
       const updatedCoins = navCoins - 20;
       getElement("nav-coins").innerText = updatedCoins;
-      alert("Calling..." + serviceName + " " + serviceNum);
+      alert("📞 Calling " + serviceName + " " + serviceNum + "...");
       const timeNow = new Date().toLocaleTimeString("en-BD");
 
       const historyParent = getElement("history-parent");
@@ -29,7 +29,7 @@ for (let callBtn of callBtns) {
     <div class="flex justify-between items-center   bg-[#FAFAFA] p-5 mb-2 rounded-lg">
                 <div>
                   <h2 class="text-xl font-semibold">${serviceName} </h2>
-                  <p>${serviceNum} </p>
+                  <p class="text-[#5C5C5C]">${serviceNum} </p>
                   
                   </div>
                   <p>${timeNow}</p>
